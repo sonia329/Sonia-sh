@@ -1,0 +1,396 @@
+/* ================= RESET ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body{
+    font-family: Arial, sans-serif;
+      background: url(b0b3ca4e85e0e5b5d43f91f6c0830c82.jpg) no-repeat center/cover;
+    color: #333;
+}
+
+/* ================= NAVBAR ================= */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #050b17;
+    padding: 15px 50px;
+    color: white;
+    z-index: 1000;
+}
+#My{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 80px 50px;
+}
+
+/* images ko control */
+#My img{
+    width: 1200px;      /* choti width */
+    height: 500px;     /* equal height */
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* paragraph spacing */
+#My p{
+    max-width: 700px;
+    margin: 10px auto 25px auto;  /* bottom space added */
+    line-height: 1.7;
+}
+
+/* optional: each skill block spacing */
+#My p b{
+    color: #0b1b3a;
+    font-size: 18px;
+}
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #0b1b3a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.brand{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #7fb3ff;
+}
+
+/* ================= HERO ================= */
+#hero{
+    height: 100vh;
+    background: linear-gradient(to right, #0b1b3a, #1f3b73);
+    background: url(arrow.jpg) no-repeat center/cover;
+    
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    color: white;
+}
+
+.hero-text{
+    max-width: 600px;
+}
+
+.hero-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.hero-text p{
+    margin-top: 10px;
+    color: #d6e4ff;
+}
+
+.hero-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #0b1b3a;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* ================= SECTIONS ================= */
+section{
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* ================= HEADINGS ================= */
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #0b1b3a;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+h2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #0b1b3a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    border-radius: 5px;
+}
+h2{
+    position: relative;
+}
+h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0b1b3a;
+}
+
+/* ================= ABOUT ================= */
+#about{
+    padding: 100px 80px;
+}
+
+#about p{
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ================= EDUCATION ================= */
+
+#education h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* MAIN LAYOUT */
+.grid{
+    background: url(bl.jpg) no-repeat center/cover;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;   /* ⭐ equal height */
+    height: 95vh;
+    width: 100%;
+}
+
+/* LEFT SIDE (CARDS) */
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* TEXT SPACING */
+.card h3{
+    color: white;
+    font-style: italic;
+    margin-top: 20px;
+}
+.card p{
+    margin: 5px 0;
+    color: white;
+}
+/* ================= SKILLS ================= */
+.skills-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    padding: 20px 50px;
+}
+
+.skills-left{                       
+    flex: 1;
+}
+
+.skills-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.skills-right{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.skill-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.skill-item:hover img{
+    transform: scale(1.1);
+}
+
+.skill-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(11, 27, 58, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.skill-item:hover .skill-name{
+    opacity: 1;
+}
+
+/* ================= CONTACT SECTION ================= */
+#contact{
+    min-height: 100vh;
+}
+
+/* container */
+.contact-container{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+/* form box */
+.contact-table-form{
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* title */
+.contact-table-form h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b1b3a;
+    margin-bottom: 5px;
+}
+
+/* subtitle */
+.contact-table-form p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* row */
+.contact-table-form .row{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+/* inputs */
+.contact-table-form input,
+.contact-table-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* textarea */
+.contact-table-form textarea{
+    height: 120px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+/* button */
+.contact-table-form button{
+    margin-left: auto;
+    display: block;
+    padding: 10px 22px;
+    background: #0b1b3a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* video */
+.contact-video{
+    flex: 1;
+}
+
+.contact-video video{
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background: #0b1b3a;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #hero{
+        padding-left: 20px;
+    }
+
+    .hero-text h1{
+        font-size: 32px;
+    }
+
+    .skills-wrapper{
+        flex-direction: column;
+    }
+
+    .skills-right{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-table-form .row{
+        flex-direction: column;
+    }
+}
