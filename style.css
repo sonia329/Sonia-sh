@@ -9,7 +9,7 @@
 /* ================= BODY ================= */
 body{
     font-family: Arial, sans-serif;
-      background: url(b0b3ca4e85e0e5b5d43f91f6c0830c82.jpg) no-repeat center/cover; /*background image*/
+      background: url(b0b3ca4e85e0e5b5d43f91f6c0830c82.JPG) no-repeat center/cover; /*background image*/
     color: #333;
 }
 
@@ -91,7 +91,7 @@ nav a:hover{
 #hero{
     height: 100vh;
     background: linear-gradient(to right, #0b1b3a, #1f3b73);
-    background: url(arrow.jpg) no-repeat center/cover; /*background*/
+    background: url(arrow.JPG) no-repeat center/cover; /*background*/
     
     display: flex;
     align-items: center;
@@ -180,7 +180,7 @@ h3{
 
 /* MAIN LAYOUT */
 .grid{
-    background: url(bl.jpg) no-repeat center/cover;
+    background: url(bl.JPG) no-repeat center/cover;
     display: flex;
     gap: 30px;
     align-items: stretch;   /* ⭐ equal height */
